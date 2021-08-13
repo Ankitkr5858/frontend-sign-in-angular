@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  private URL = ' https://angular-node-auth-backend.herokuapp.com/api';
+  private URL = 'http://localhost:4000/api';
   constructor(private http: HttpClient, private router: Router) { }
 
   signUpUser(user: any) {
