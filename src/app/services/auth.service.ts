@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  private URL = 'https://b7f3682b37f1.ngrok.io/api';
+  private URL = 'http://localhost:4000/api';
   constructor(private http: HttpClient, private router: Router) { }
 
   signUpUser(user: any) {

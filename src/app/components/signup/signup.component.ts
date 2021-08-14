@@ -22,10 +22,10 @@ export class SignupComponent implements OnInit {
   }
 
   signUp() {
+    if(!this.user.email || !this.user.password) return;
     this.authService.signUpUser(this.user)
       .subscribe(
         res => {
-          console.log(res);
           localStorage.setItem('token', res.token);
           this.router.navigate(['/home']);
         },
